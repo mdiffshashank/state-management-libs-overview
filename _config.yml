@@ -1,2 +1,33 @@
-title: My Markdown Site
+# Basic Site Metadata
+title: State Management Home
+description: A clean, structured collection of my project docs and technical notes.
+show_downloads: false    # Set to true if you want quick download links for zip/tarballs
+
+# Theme Selection
 theme: jekyll-theme-primer
+
+# Markdown & Syntax Highlighting Features
+kramdown:
+  input: GFM             # Enable GitHub-Flavored Markdown (tables, task lists, strikethrough)
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true # Shows line numbers in code blocks
+
+# Navigation Links (Header)
+header_pages:
+  - index.md
+  - about.md
+  - docs.md
+
+# SEO & Search Engine Preview Tuning
+author: Shashank Trivedi
+lang: en_US
+
+# Exclude unnecessary files from being processed as web pages
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
